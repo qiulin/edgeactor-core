@@ -8,9 +8,9 @@ import com.typesafe.config.Config;
 
 import java.util.Set;
 
-public class UnifiedStep extends DataBeamStep implements ProvidesValidations, InstantiatesComponents {
+public class UnifiedDataStep extends DataBeamStep implements ProvidesValidations, InstantiatesComponents {
 
-    public UnifiedStep(String name) {
+    public UnifiedDataStep(String name) {
         super(name);
     }
 

@@ -1,6 +1,6 @@
 package com.edgeactor.core;
 
-import com.edgeactor.core.run.Runner;
+import com.edgeactor.core.run.BeamRunner;
 import com.cloudera.labs.envelope.utils.ConfigUtils;
 import com.typesafe.config.Config;
 import org.slf4j.Logger;
@@ -39,8 +39,8 @@ public class EnvelopeBeamMain {
         }
         LOG.info("Configuration loaded");
 
-        Runner runner = new Runner();
-        runner.run(config);
+        BeamRunner beamRunner = new BeamRunner();
+        beamRunner.run(config);
     }
 
 }

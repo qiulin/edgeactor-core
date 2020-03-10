@@ -22,6 +22,8 @@ public abstract class DataBeamStep
 
     private PCollection<Row> data;
 
+    private PCollection<Row> output;
+
     public DataBeamStep(String name) {
         super(name);
     }
@@ -32,5 +34,13 @@ public abstract class DataBeamStep
 
     public void setData(PCollection<Row> data) {
         this.data = data;
+    }
+
+    public PCollection<Row> getOutput() {
+        return output;
+    }
+
+    public void setOutput(PCollection<Row> output) {
+        this.output = output;
     }
 }
